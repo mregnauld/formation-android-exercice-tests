@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Main -->
+	<dimen name="main_hauteur_saisie_memo">64dp</dimen>
+	<dimen name="main_hauteur_memo">64dp</dimen>
+	<dimen name="main_taille_intitule_memo">18sp</dimen>
+	<dimen name="main_marge_memo">8dp</dimen>
+
+</resources>

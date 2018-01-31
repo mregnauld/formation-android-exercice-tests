@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.formationandroid.tests.MainActivity">
+
+	<EditText
+		android:id="@+id/saisie_memo"
+		android:layout_width="0dp"
+		android:layout_height="@dimen/main_hauteur_saisie_memo"
+		android:background="@color/couleurMainFondSaisie"
+		android:hint="@string/main_hint_saisie_memo"
+		android:inputType="textCapSentences"
+		android:maxLength="@integer/main_longueur_max_saisie_memo"
+		android:maxLines="1"
+		android:padding="@dimen/main_marge_memo"
+		android:textColor="@android:color/black"
+		android:textSize="@dimen/main_taille_intitule_memo"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toLeftOf="@+id/bouton_valider"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<Button
+		android:id="@+id/bouton_valider"
+		android:layout_width="@dimen/main_hauteur_saisie_memo"
+		android:layout_height="@dimen/main_hauteur_saisie_memo"
+		android:background="@color/couleurMainFondValider"
+		android:onClick="onClickBoutonValider"
+		android:text="@string/main_libelle_bouton_valider"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/main_taille_intitule_memo"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/liste_memos"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/saisie_memo"/>
+
+</android.support.constraint.ConstraintLayout>

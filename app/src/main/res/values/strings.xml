@@ -1,0 +1,12 @@
+<resources>
+
+	<!-- Commun -->
+	<string name="app_name">Tests</string>
+
+	<!-- Main -->
+	<string name="main_message_position">Clic à la position %1$d</string>
+	<string name="main_hint_saisie_memo">Saisir un mémo &#8230;</string>
+	<string name="main_libelle_bouton_valider">OK</string>
+	<string name="main_message_derniere_position">Dernière position cliquée : %1$d</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Main -->
+	<integer name="main_longueur_max_saisie_memo">30</integer>
+
+</resources>
