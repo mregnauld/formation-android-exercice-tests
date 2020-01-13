@@ -1,14 +1,15 @@
 package com.formationandroid.tests;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.util.List;
+
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 @RunWith(AndroidJUnit4.class)
 public class MemosDAOTest
@@ -18,7 +19,7 @@ public class MemosDAOTest
 	public void ajoutMemo() throws Exception
 	{
 		// context de l'application :
-		Context context = InstrumentationRegistry.getTargetContext();
+		Context context = ApplicationProvider.getApplicationContext();
 		
 		// accès à la base de données :
 		MemosDAO memosDAO = new MemosDAO();

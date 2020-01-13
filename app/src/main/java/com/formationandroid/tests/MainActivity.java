@@ -3,9 +3,6 @@ package com.formationandroid.tests;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -21,6 +18,10 @@ import org.json.JSONObject;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity implements RecyclerView.OnItemTouchListener
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerView.OnIt
 	}
 	
 	@Override
-	public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent motionEvent)
+	public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent motionEvent)
 	{
 		if (gestureDetector.onTouchEvent(motionEvent))
 		{
@@ -158,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerView.OnIt
 	}
 	
 	@Override
-	public void onTouchEvent(RecyclerView rv, MotionEvent e) {}
+	public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {}
 	
 	@Override
 	public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {}
