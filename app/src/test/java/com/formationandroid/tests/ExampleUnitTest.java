@@ -11,8 +11,9 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest
 {
 	@Test
-	public void addition_isCorrect() throws Exception
+	public void verifierIntituleMemoDTO() throws Exception
 	{
-		assertEquals(4, 2 + 2);
+		MemoDTO memoDTO = new MemoDTO("test intitulé");
+		assertEquals("test intitulé", memoDTO.getIntitule());
 	}
 }
